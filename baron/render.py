@@ -538,8 +538,15 @@ nodes_rendering_order = {
             ("formatting", "fifth_formatting",  "locals"),
             ("key",        "locals",            "locals"),
         ],
+
         "global": [
             ("constant",   "global",            True),
+            ("formatting", "formatting",        True),
+            ("list",       "value",             True),
+        ],
+
+        "nonlocal": [
+            ("constant",   "nonlocal",          True),
             ("formatting", "formatting",        True),
             ("list",       "value",             True),
         ],
